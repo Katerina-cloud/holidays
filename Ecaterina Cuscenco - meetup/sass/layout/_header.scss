@@ -1,0 +1,50 @@
+.header {
+  height: 100vh;
+  background-color: rgba($color-black, .6);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    
+
+  &__images{
+    display: flex;
+
+    transform: rotate(-7deg);
+    padding-bottom: 5rem;
+    padding: 0 3%;
+
+    @media (min-width: 992px) {
+      padding: 0 12.5%;
+    }
+
+    .header__image {
+      width: 23%;
+      margin-right: -2rem;
+      
+      @media (min-width: 768px) {
+        width: 13%;
+        padding-bottom: 1.5rem;
+      }
+      &--1 {
+        z-index: 6;
+      }
+      &--2 {
+        z-index: 5;
+      }
+      &--3 {
+        z-index: 4;
+      }
+      &--4 {
+        z-index: 3;
+      }
+      &--5 {
+        z-index: 2;
+      }
+    }
+  }
+}
+

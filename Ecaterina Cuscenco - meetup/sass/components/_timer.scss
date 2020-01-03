@@ -1,0 +1,48 @@
+.header__timer {
+  align-self: center;
+  color: $color-white;
+  text-align: center;
+  border: 2px solid $color-primary;
+  border-radius: 2rem; 
+  padding: 2rem;
+  width: max-content;
+
+  @media (min-width: 768px) {
+    padding: 2rem 5rem;
+  }  
+
+  .header__timer-ul {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header__timer-li {
+    display: inline-block;
+    font-size: 1rem;
+    list-style-type: none;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }  
+    @media (min-width: 1200px) {
+      padding: 0 2rem;
+    }  
+  }
+
+  .header__timer-span {
+    display: block;
+    font-size: 5rem;
+    font-weight: 100;
+
+    @media (min-width: 568px) {
+      font-size: 8rem;
+    }  
+
+    @media (min-width: 768px) {
+      font-size: 12rem;
+      line-height: 12rem;
+    }  
+  }
+}
+

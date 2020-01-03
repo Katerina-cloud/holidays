@@ -1,0 +1,20 @@
+.activities-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 3%;
+
+  
+  @media (min-width: 768px) {
+    margin-bottom: 10rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }  
+
+  @media (min-width: 992px) {
+    padding: 0 12.5%;
+  }
+}
+

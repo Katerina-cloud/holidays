@@ -1,0 +1,27 @@
+.sponsorship-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 3% 10rem 3%;
+  color: white;
+  background-color:  rgba($color-black, .6);
+  background-size: cover;
+  transform: skewY(-6deg);
+
+  & > * {
+      transform: skewY(6deg);
+  }
+
+  @media (min-width: 768px) {
+    &__article {
+      max-width: 50%;
+    }
+
+    &__logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 6rem;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.textfield-input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: .5px solid rgba($color-black, 0.25);
+  border-radius: .5rem;
+  font-size: 1.9rem;
+  color: rgba(31, 32, 65, 0.75);
+
+  &--big {
+    height: 40rem;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+  }
+}
+
+@mixin placeholder {
+  input.textfield-input::-webkit-input-placeholder {@content}
+  input.textfield-input::-moz-placeholder          {@content}
+  input.textfield-input:-moz-placeholder           {@content}
+  textarea.textfield-input::-webkit-input-placeholder {@content}
+  textarea.textfield-input::-moz-placeholder          {@content}
+  textarea.textfield-input:-moz-placeholder           {@content}
+}
+
+@include placeholder {
+  font-family: "Roboto", sans-serif;;
+  font-size: 1.9rem;
+  font-weight: 100;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+// /* Place Holder CSS */
+textarea.textfield-input::-webkit-input-placeholder,
+input.textfield-input::-webkit-input-placeholder {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input:-moz-placeholder,
+input.textfield-input:-moz-placeholder {
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input::-moz-placeholder,
+input.textfield-input::-moz-placeholder {
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+
+/* Place Holder CSS for Focus */
+textarea.textfield-input:hover::-webkit-input-placeholder,
+input.textfield-input:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input:hover:-moz-placeholder,
+input.textfield-input:hover:-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input:hover::-moz-placeholder,
+input.textfield-input:hover::-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+
+/* Place Holder CSS for Focus */
+textarea.textfield-input:focus::-webkit-input-placeholder,
+input.textfield-input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input:focus:-moz-placeholder,
+input.textfield-input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+textarea.textfield-input:focus::-moz-placeholder ,
+input.textfield-input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}

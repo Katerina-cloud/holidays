@@ -1,0 +1,50 @@
+.events-section {
+  padding: 8rem 3%;
+
+  @media (min-width: 992px) {
+    padding: 20rem 6% 8rem 6%;
+  }
+
+  &__heading,
+  &__paragraph {
+    padding: 0 3%;
+      
+    @media (min-width: 992px) {
+      padding: 0 12.5%;
+    }
+  }
+
+  &__paragraph {
+    max-width: 70%;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__galery-row {
+    display: flex;
+  }
+
+  &__panel {
+    height: 25vw;
+    &--blue { 
+      flex-basis: 55%;
+      background-color: $color-blue; 
+    }
+    &--green { 
+      flex-basis: 45%;
+      background-color: $color-primary; 
+    }
+    &--orange { 
+      flex-basis: 45%;
+      background-color: $color-orange; 
+    }
+    &--orangered { 
+      flex-basis: 55%;
+      background-color: $color-orangered;
+    }
+  }
+}

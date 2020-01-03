@@ -1,0 +1,45 @@
+.contact-section {
+  padding: 5rem 3%;
+  background-color: rgba($color-black, .6);
+  background-image: url("/img/map.png");
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $color-white;
+    padding: 5rem;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__paragraph {
+    max-width: 29rem;
+    font-size: 1.8rem;
+  }
+
+  @media (min-width: 768px) {
+    &__panel {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    &__address {
+      width: 50%;
+    }
+    
+    &__message-card {
+      width: 50%;
+    }  
+  }  
+  
+  @media (min-width: 992px) {
+    padding: 5rem 12.5%;
+  }
+}
+

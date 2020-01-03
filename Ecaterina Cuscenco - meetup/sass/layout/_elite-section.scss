@@ -1,0 +1,34 @@
+.elite-section {
+  padding: 10rem 3% 10rem 3%;
+  color: white;
+  text-align: right;
+  background-color:  rgba($color-black, .6);
+  background-size: cover;
+  transform: skewY(-6deg);
+
+  & > * {
+    transform: skewY(6deg);
+  }
+
+  @media (min-width: 568px) {
+    display: flex;
+    align-items: center;
+  }  
+
+  @media (min-width: 992px) {
+    padding: 10rem 12.5% 10rem 12.5%;
+  }
+
+  &__image  {
+    position: relative;
+    width: 50%;
+
+    @media (min-width: 568px) {
+      position: relative;
+      top: -20rem;
+      width: 30%;
+    }
+  }
+}
+
+

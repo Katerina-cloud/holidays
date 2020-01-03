@@ -1,0 +1,53 @@
+
+.speakers-section {
+  padding: 10rem 3%;
+    
+  @media (min-width: 992px) {
+    padding: 20rem 12.5%;
+  }
+
+  &__paragraph {
+    max-width: 70%;
+  }
+
+  &__galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-rows: 25rem;
+    grid-gap: 3rem;
+    grid-auto-flow: dense;
+  }
+
+  &__panel {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+
+    &--green {
+      background-color: $color-primary;
+    }
+
+    &--pattern {
+      background-image: url(/img/background-green.png);
+      background-size: cover;
+      padding: 2rem;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__heading {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  
+  &__widget {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+
+

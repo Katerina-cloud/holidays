@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo.png">
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+        
+        <title>Meetup</title>
+    </head>
+    <body>
+        <header class="header">      
+            <nav class="navbar">
+                <a href="#" class="navbar__toggle"><img src="/img/menu_icon.png" alt="menu_icon"></a></span>    
+                <a href="#" class="navbar__logo"><img src="/img/Envato-Logo.png" alt="logo"></a>
+                <ul class="navbar__main-nav">    
+                    <li class="navbar__main-nav-li"><a href="#" class="navbar__links">Event details</a></li>     
+                    <li class="navbar__main-nav-li"><a href="#" class="navbar__links">Speakerss</a></li>  
+                    <li class="navbar__main-nav-li"><a href="#" class="navbar__links">Sponsors</a></li>     
+                    <li class="navbar__main-nav-li"><a href="#" class="navbar__links">Past events</a></li>  
+                    <li class="navbar__main-nav-li"><a href="#" class="navbar__links">Contact</a></li>  
+                </ul>
+            </nav>
+            <div class="header__timer">
+                <ul class="header__timer-ul">
+                    <li class="header__timer-li"><span class="header__timer-span" id="days"></span>days</li>
+                    <li class="header__timer-li"><span class="header__timer-span">:</span></li>
+                    <li class="header__timer-li"><span class="header__timer-span" id="hours"></span>Hours</li>
+                    <li class="header__timer-li"><span class="header__timer-span">:</span></li>
+                    <li class="header__timer-li"><span class="header__timer-span"  id="minutes"></span>Minutes</li>
+                    <li class="header__timer-li"><span class="header__timer-span">:</span></li>
+                    <li class="header__timer-li"><span class="header__timer-span" id="seconds"></span>Seconds</liclass="header__timer">
+                </ulclass="header__timer">
+            </div>
+
+            <div class="header__images">
+                <img src="/img/talk_shop.png" alt="icon 1" class="header__image header__image--1">
+                <img src="/img/icon2.png" alt="icon 2" class="header__image header__image--2">
+                <img src="/img/contact.png" alt="icon 3" class="header__image header__image--3">
+                <img src="/img/icon4.png" alt="icon 4" class="header__image header__image--4">
+                <img src="/img/community.png" alt="icon 5" class="header__image header__image--5">   
+    
+            </div>
+        </header>
+        <main>
+            <section class="welcome-section">
+                <article class="welcome-section__article">
+                    <h2 class="heading-secondary u-margin-bottom-xsmall">
+                        Welcome!
+                    </h2>
+                        <p class="paragraph">The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p>
+                        <p class="paragraph">Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p>
+                        <p class="paragraph">It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>
+                </article>
+                <form action="set" class="signup-card">
+                    <h4 class="heading-quaternary u-margin-bottom-small">Sign up for our event</h4>
+                    <input type="text" class="textfield-input u-margin-bottom-small" placeholder="Enter your name">
+                    <input type="text" class="textfield-input u-margin-bottom-small" placeholder="Enter your email">
+                    <input type="text" class="textfield-input u-margin-bottom-small" placeholder="Phone number">
+                    <input type="text" class="textfield-input u-margin-bottom-medium" placeholder="Envato Username">
+                    <a href="#"class="btn btn--green btn--big u-margin-bottom-small">Let me in!</a>
+                    <p class="paragraph">Hurry up, Limited seats availble <br> *we will never spam your email</p>
+                </form>
+            </section>
+
+            <section class="activities-section">
+                <div class="activity-panel">
+                    <img src="/img/community.png" alt="Community">
+                    <h3 class="heading-tertiary">Community</h3>
+                    <p class="paragraph paragraph--center">Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+                        and topics. We will have loads of fun.</p>
+                </div>
+                <div class="activity-panel">
+                    <img src="/img/talk_shop.png" alt="Talk shop">
+                    <h3 class="heading-tertiary">Talk shop</h3>
+                    <p class="paragraph paragraph--center">In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.</p>
+                </div>
+                <div class="activity-panel">
+                    <img src="/img/war_stories.png" alt="War stories">
+                    <h3 class="heading-tertiary">War stories</h3>
+                    <p class="paragraph paragraph--center">Gather round fellow authors!Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.</p>
+                </div>
+            </section>
+
+            <section class="schedule-section">   
+                <table class="schedule u-margin-bottom-small">
+                    <thead class="schedule__head">
+                        <tr>
+                            <th>Time</th>
+                            <th>Stuff that will happen</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="schedule__body"> 
+                            <tr> 
+                                <td class="u-center-text"><span>10am - 12pm</span></tdclass=".u-center-text"> 
+                                <td><span>Introduction and presentations about Envato</span></td> 
+                                <td><i class="fas fa-plus-circle"></i></td> 
+                            </tr>
+                            <tr> 
+                                <td class="u-center-text"><span>12pm - 02pm</span></td> 
+                                <td><span>Sessions by honorable guests and Speakerss</span></td> 
+                                <td><i class="fas fa-plus-circle"></i></td> 
+                            </tr>
+                            <tr> 
+                                <td class="u-center-text"><span>02pm - 03pm</span></td> 
+                                <td><span>Break and Mingle time with the authors</span></td> 
+                                <td><i class="fas fa-plus-circle"></i></td> 
+                            </tr>
+                            <tr> 
+                                <td class="u-center-text"><span>03pm - 05pm</span></td> 
+                                <td><span>Portfolio Review, Rewards and Ending Presentation</span></td> 
+                                <td><i class="fas fa-plus-circle"></i></td> 
+                            </tr>
+                    </tbody>
+                </table>
+                <p class="paragraph schedule-section__paragraph u-center-text">Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+            </section> 
+
+            <section class="elite-section">
+                <img class="elite-section__image" src="/img/elite.png" alt="elite lable">
+                <article>
+                    <h2 class="heading-secondary u-margin-bottom-xsmall">We reward the Elites!</h2>
+                    <p class="paragraph">Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p>
+                    <p class="paragraph">All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p>
+                    <p class="paragraph u-margin-bottom-big">*Be advised, we will only give you Elite thank you swag for each level of elite you cross.That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+                    <a href="#"class="btn btn--green btn--small u-margin-bottom-small">Bring on the swag!</a>
+                </article>
+            </section>
+
+            <section class="speakers-section">
+                <h2 class="heading-secondary u-margin-bottom-small">Speakers</h2>
+                <p class="paragraph speakers-section__paragraph">Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business. Hope you will have a great time listening to our presentations!</p>
+                <div class="speakers-section__galery u-margin-top-big">
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel speakers-section__panel--pattern">
+                        <h2 class="speakers-section__heading">Shahriyer Shuvo</h2>
+                        <p class="paragraph">More about selling in the Envato Marketplaces</p>
+                        <div class="speakers-section__widgets u-margin-top-medium">
+                            <i class="speakers-section__widget fab fa-facebook-square"></i>
+                            <i class="speakers-section__widget fab fa-twitter-square"></i>
+                            <i class="speakers-section__widget fab fa-linkedin"></i>
+                            <i class="speakers-section__widget fab fa-google-plus-square"></i>
+                        </div>
+                    </div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel">
+                        <img src="/img/speaker.png" alt="hand">
+                    </div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                    <div class="speakers-section__panel speakers-section__panel--green"></div>
+                </div>
+            </section>
+
+            <section class="sponsorship-section">
+                <article class="sponsorship-section__article u-center-text">
+                    <h2 class="heading-secondary u-margin-bottom-small">Sponsor Our Event!</h2>
+                    <p class="paragraph">If you want to help us making this event lively and successful, help us by sponsoring our event! This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! You can also sponsor us by giving away free swag at the event!</p>
+                    <p class="paragraph u-margin-bottom-big">Here’s who have sponsored us already:</p>
+                    <div class="sponsorship-section__logos u-margin-bottom-medium">
+                        <div>
+                            <img class="u-margin-bottom-xsmall" src="/img/mountains.png" alt="Logo mountains">
+                        </div>
+                        <div>
+                            <img class="u-margin-bottom-xsmall" src="/img/logo_intracity.png" alt="Logo intracity">
+                        </div>
+                        <div>
+                            <img class="u-margin-bottom-xsmall" src="/img/logo_envato_small.png" alt="Logo Envato">
+                        </div>
+                    </div>
+                </article>    
+                <a href="#"class="btn btn--green btn--medium">Sponsor Us</a>
+            </section>
+
+            <section class="events-section">
+                <h2 class="heading-secondary u-margin-bottom-small events-section__heading">Past Events</h2>
+                <p class="paragraph events-section__paragraph">Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
+                <div class="events-section__galery u-margin-top-big u-margin-bottom-big">
+                    <div class="events-section__galery-row">
+                        <div class="events-section__panel events-section__panel--blue"></div>
+                        <div class="events-section__panel events-section__panel--green"></div>
+                    </div>
+                    <div class="events-section__galery-row">
+                        <div class="events-section__panel events-section__panel--orange"></div>
+                        <div class="events-section__panel events-section__panel--orangered"></div>
+                    </div>
+                </div>
+                <a href="#"class="btn btn--black btn--medium events-section__btn">View More</a>
+
+            </section> 
+
+            <section class="contact-section">
+                <div class="contact-section__panel">
+                    <div class="contact-section__address">
+                        <img class="u-margin-bottom-medium" src="/img/contact.png" alt="contact">
+                        <p class="contact-section__paragraph u-center-text">Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
+                        <a href="#"class="btn btn--green btn--medium u-margin-top-small u-margin-bottom-small">View Map</a>
+                    </div>
+                    <form action="set" class="contact-section__message-card">
+                        <input type="text" class="textfield-input u-margin-bottom-small" placeholder="Enter your name">
+                        <textarea name="message" id="" cols="30" rows="10" class="textfield-input u-margin-bottom-small" placeholder="Type your message"></textarea>
+                        <a href="#"class="btn btn--black btn--big u-margin-bottom-small">Send Message</a>
+                    </form>
+                </div>    
+            </section>
+
+
+            <footer class="footer">
+                <div class="footer__widgets u-margin-bottom-small ">
+                    <i class="footer__widget fab fa-facebook-square"></i>
+                    <i class="footer__widget fab fa-twitter-square"></i>
+                    <i class="footer__widget fab fa-linkedin"></i>
+                    <i class="footer__widget fab fa-google-plus-square"></i>
+                    <i class="footer__widget fab fa-tumblr-square"></i>
+                </div>
+                <p class="paragraph u-center-text">Hope we see you at the event! <br> All Rights Reserved. Envato Bangladesh © 2015</p>
+            </footer>
+        </main>
+    </body>
+    <script src="/js/header.js"></script>
+    <script src="/js/timer.js"></script>
+</html>
+
