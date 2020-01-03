@@ -9,7 +9,7 @@
   transform: skewY(-6deg);
 
   & > * {
-      transform: skewY(6deg);
+    transform: skewY(6deg);
   }
 
   @media (min-width: 768px) {
