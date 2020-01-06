@@ -93,6 +93,22 @@ console.log(filter_list([1,2,'a','b']))
 console.log(filter_list([1,'a','b',0,15]))
 console.log(filter_list([1,2,'aasf','1','123',123]))
 
+// task 6
+
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+// isIsogram("Dermatoglyphics") == true
+// isIsogram("aba") == false
+// isIsogram("moOse") == false // -- ignore letter case
+
+function isIsogram(str){
+  return new Set(str.toLowerCase()).size === str.length;
+}
+
+console.log(isIsogram("Dermatoglyphics"));
+console.log(isIsogram("aba"));
+console.log(isIsogram("moOse"));
+
 // task 7
 // Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
 
